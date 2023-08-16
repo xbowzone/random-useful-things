@@ -1,17 +1,17 @@
 create 100 empty txt files:
 cmd:
 @echo off
-for /L %i in (1,1,100) do (type nul > "f%i.txt")
+for /L %i in (1,1,100) do (type nul > "file%i.txt")
 
 
 bash:
 for i in {1..100}; do
-    touch "f${i}.txt"
+    touch "file${i}.txt"
 done
 
 
 
-for folders:
+create 100 empty folders:
 cmd:
 @echo off
 for /L %i in (1,1,100) do (
